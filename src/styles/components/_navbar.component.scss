@@ -1,0 +1,178 @@
+.Header{
+    align-items: center;
+    background: var(--color-main-dark);
+    box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.515);
+    border-bottom: 2px solid  var(--color-main-alert);
+    display: flex;
+    height: 3.5rem;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-fixed);
+    &-logo{
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    &-left{
+        align-items: center;
+        color: var(--color-main-light);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100px;
+        
+    }
+    &-right{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 300px;
+    }
+    &-leftIcon{
+        color: var(--color-primary-success);
+        cursor: pointer;
+        font-size: 32px;
+        :hover{
+            transition: .3s;
+            color: var(--color-main-alert);
+        }
+    }
+    &-rightIcon{
+        color: var(--color-primary-success);
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 10px;
+        :hover{
+            transition: .3s;
+            color: var(--color-main-alert);
+        }
+    }
+    &-user{
+        color: var(--color-primary-success);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        text-transform: uppercase;
+        width: 150px;
+        & span{
+            cursor: pointer;
+            padding: 5px;
+            &:hover {
+                border-bottom: 2px solid var(--color-main-alert);
+            }
+        }
+        & .UserName{
+            background-color: var(--color-main-dark);
+            border-radius: 10px;            
+        }
+    }
+}
+
+
+.Drawer{
+    align-items: center;
+    background-color: var(--color-main-dark);
+    border-right: 2px solid var(--color-main-alert);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    left: -100%;
+    transition: .6s ease-in-out;
+    top: 0;
+    width: 24%;
+    z-index: 102;
+    &-sections{
+        
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: space-around;
+    }
+    &-section{
+        align-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding: 5px;
+        width: 140px;
+        transition: .5s;
+        &:hover {
+            transition: .5s;
+            transform: translateX(20px);
+            background-color: var(--color-primary-success);
+        }
+        
+    }
+    &-sectionIcon{
+        color: var(--color-main-light);
+        font-size: 24px;
+    }
+    &-sectionName{
+        align-items: center;
+        color: var(--color-main-light);
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 10px;
+        text-transform: uppercase;
+    }
+}
+
+.Show{
+    transition: .6s ease-in-out;
+    left: 0;
+}
+
+@media (max-width: 798px) {
+    .Header{
+        &-center{
+            flex-direction: column;
+            justify-content: space-between;
+            height: 55px;
+        }
+        &-img{
+            height: 50px;
+            width: 65px;
+        }
+        &-logo{
+            &:hover{
+                transform: scale(1);
+            }
+        }
+        &-user{
+            color: var(--color-primary-success);
+            display: flex;
+            flex-direction: row;
+            letter-spacing: 1px;
+            margin-right: .5rem;
+            text-transform: uppercase;
+            width: 120px;
+            & span{
+                cursor: pointer;
+                padding: 5px;
+                &:hover {
+                    border-bottom: 2px solid var(--color-border);
+                }
+            }
+            & .UserName{
+                background-color: var(--color-main-dark);
+                border-radius: 10px;            
+            }
+        }
+    }
+    .Drawer{
+        width: 74%;
+    }
+}

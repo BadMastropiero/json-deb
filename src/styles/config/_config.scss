@@ -1,0 +1,18 @@
+:root{
+    --font-size-h1: 2.25rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.25rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-smaller: 0.8125rem;
+    --header-height: 5rem;
+    --max-width: 1440px;
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-dropdown: 100;
+    --z-fixed: 1000;
+    --z-modal: 10000;
+}
+
+$breakpoints: ( xsmall: 330px, small: 415px, medium: 640px, large: 1024px, xlarge: 1440px, )

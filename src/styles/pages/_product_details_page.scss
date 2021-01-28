@@ -1,0 +1,75 @@
+.Product{
+    display: flex;
+    &-left{
+        flex: .4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-leftTitle{
+        margin: 20px;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &-leftImage{
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.75);
+        height: 300px;
+        overflow: hidden;
+        padding-bottom: 5px;
+        position: relative;
+        width: 80%;
+    }
+    &-image{
+        border-radius: 15px;
+        cursor: pointer;
+        display: inline;
+        height: 100%;
+        margin-top: 10px;
+        object-fit: cover;
+        transition: 10s;
+        width: auto;
+        &:hover{
+            transition: 10s;
+            transform: scale(1.30);
+        }
+    }
+    &-right{
+        flex: .6;
+        display: flex;
+        flex-direction: column;
+    }
+    &-rightTitle, &-update{
+        border-bottom: 1px solid var( --color-primary-success);
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &-update{
+        margin-top: 30px;
+    }
+    &-rightFeatures{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+.FeatureSlot{
+    color: var(--color-main-alert);
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ProductFeature{
+    text-transform: capitalize;
+}
+

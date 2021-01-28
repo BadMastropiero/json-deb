@@ -1,0 +1,91 @@
+{
+  "products": [
+    {
+      "product": "HP Gaming Laptop",
+      "price": "1299",
+      "category": "Gaming Laptops",
+      "department": "Laptops",
+      "id": 1
+    },
+    {
+      "product": "Electric Kitches",
+      "price": "1200",
+      "category": "Kitchen Tools",
+      "department": "Tools and Stuff",
+      "id": 2
+    },
+    {
+      "product": "Test Product",
+      "price": "12.99",
+      "category": "Test for Test",
+      "department": "Products",
+      "id": 3
+    },
+    {
+      "product": "Test Product",
+      "price": "12",
+      "category": "Test for Test",
+      "department": "Products",
+      "id": 4
+    },
+    {
+      "product": "Straw Hat",
+      "price": "1.99",
+      "category": "Nice Hats",
+      "department": "Hats and stuff",
+      "id": 5
+    },
+    {
+      "product": "New product",
+      "price": "12",
+      "category": "some category",
+      "department": "Hats and stuff",
+      "id": 6
+    }
+  ],
+  "departments": [
+    {
+      "id": "09",
+      "name": "Clothes"
+    },
+    {
+      "id": "04",
+      "name": "Cosmetics"
+    },
+    {
+      "id": "03",
+      "name": "Tools"
+    },
+    {
+      "id": "02",
+      "name": "Toys"
+    }
+  ],
+  "categories": [
+    {
+      "id": "02",
+      "department": "Clothes",
+      "name": "Baby Clothes"
+    },
+    {
+      "id": "03",
+      "department": "Clothes",
+      "name": "Man Clothes"
+    },
+    {
+      "id": "04",
+      "department": "Cosmetics",
+      "name": "Perfums"
+    },
+    {
+      "id": "05",
+      "department": "Tools",
+      "name": "Kitchen Tools"
+    },
+    {
+      "id": "06",
+      "department": "Toys",
+      "name": "Boy toys"
+    }
+  ]
+}

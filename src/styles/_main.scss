@@ -1,0 +1,14 @@
+@import './base/base';
+@import './config/config';
+@import './theme/colors';
+
+
+// pages
+@import './pages/main_page';
+@import './pages/product_details_page';
+
+
+// components 
+@import './components/navbar.component';
+@import './components/footer.component';
+

@@ -1,0 +1,116 @@
+body{
+    background-color: var( --color-secondary-light);   
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+     
+ }
+ 
+ body::-webkit-scrollbar {
+     width: 12px;
+     height: 12px;
+     background: var(--color-main-dark);
+   }
+   
+  body::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+     width: var(--scroll-size);
+     background-color: var(--color-main-primary);
+     transition: .6;
+    //  &:hover {
+    //    background-color: var(--color-main-alert);
+    //    transition: .6;
+    //  }
+   }
+ 
+ img {
+     max-width: 100%;
+  }
+  
+  ul {
+     margin-top: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     list-style: none;
+  }
+  
+  a, li, ul, ol {
+     text-decoration: none;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+     margin: 0;
+  }
+  
+  p {
+     margin: 0;
+     padding: 0;
+  }
+
+  .Page{
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 140px;
+  }
+
+  .Product-shopProducts{
+   margin-top: 30px;
+}
+
+.Product{
+   &-form{
+       align-items: center;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }   
+   &-input{
+       border: none;
+       background: none;
+       border-bottom: 1px solid var(--color-primary-success);
+       margin-top: 5px;
+       margin-bottom: 20px;
+       outline: 0;
+       padding: .7em;
+       width: 120px;
+   }
+   &-error{
+       color: red;
+       margin-left: 5px;
+       text-transform: uppercase;
+       font-size: 10px;
+       font-weight: bold;
+   }
+}
+
+.ActionBtn{
+   background: transparent;
+   border: 1px solid var(--color-main-alert);
+   border-radius: 5px;
+   cursor: pointer;
+   height: 25px;
+   margin: 5px;
+   outline: none;
+   text-transform: uppercase;
+   transition: .5s;
+   width: 75px;
+   &:hover{
+       transition: .5s;
+       background: var(--color-main-alert);
+   }
+
+}
+
+.ActionCell{
+   align-items: center;
+   color: var(--color-main-alert);
+   
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-evenly;
+   &-eraser:hover{
+      color: red;
+      cursor: pointer;
+      transition: .5s;
+      
+   }
+}
